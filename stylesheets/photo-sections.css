@@ -1,7 +1,113 @@
 .photoSection {
+  display: flex;
+}
+
+#foodSection {
   background-image: url(../images/food-background.jpg);
+}
+
+#legsSection {
+  background-image: url(../images/legs-background.jpg);
+}
+
+#catsSection {
+  background-image: url(../images/cats-background.png);
+}
+
+#selfiesSection {
+  background-image: url(../images/selfies-background.jpg);
 }
 
 .photoSection .overlay {
   background-color: black;
 }
+
+.photoSection > section {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.photoSection nav {
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.photoSection nav header,
+.photoSection nav li {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.photoSection nav header {
+  color: black;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.photoSection nav li {
+  transition: all .2s ease;
+  color: #4F4F4F;
+  cursor: pointer;
+}
+
+.photoSection nav li:hover {
+  color: white;
+  background-color: #656565;
+}
+
+.photoSection aside {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.4) 100%);
+  border-radius: 0 5px 5px 0;
+}
+
+.photoSection aside:hover {
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 100%);
+}
+
+.photoSection aside i {
+  margin: auto;
+  color: black;
+}
+
+.photoSection .photos {
+  overflow: scroll;
+  border-radius: 0 5px 5px 0;
+}
+
+.photoSection .photos ul {
+  display: flex;
+}
+
+.photoSection .photos ul li a {
+  position: relative;
+  display: block;
+}
+
+.photoSection .photos .fa-heart {
+  transition: all .2s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  opacity: .6;
+}
+
+.photoSection .photos .fa-heart:hover {
+  opacity: 1;
+}
+
+.photoSection .photos .fa-heart div {
+  margin-top: -27px;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+

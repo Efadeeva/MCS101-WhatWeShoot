@@ -22,3 +22,7 @@ body {
   position: absolute;
   opacity: .6;
 }
+
+.fa {
+  font-size: 36px !important;
+}
