@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: 'PT Sans Caption', Helvetica, Arial, sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  opacity: .6;
+}

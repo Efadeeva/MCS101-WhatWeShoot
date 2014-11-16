@@ -1,0 +1,45 @@
+.oceanSection {
+  background-color: black;
+}
+
+.oceanSection .overlay {
+  background-image: url(../images/home-background-optimized.jpg);
+}
+
+.flex {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* Welcome Section */
+
+#welcomeSection .flex header {
+  font-size: 68px;
+}
+
+#welcomeSection .flex footer {
+  font-size: 24px;
+}
+
+/* More Section */
+
+#moreSection .flex header h2 {
+  font-size: 24px;
+}
+
+#moreSection .flex header p {
+  font-size: 14px;
+}
+
+#moreSection .flex footer {
+  font-size: 10px;
+}
+
+#moreSection .flex footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.photoSection {
+  background-image: url(../images/food-background.jpg);
+}
+
+.photoSection .overlay {
+  background-color: black;
+}
