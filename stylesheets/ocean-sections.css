@@ -26,6 +26,64 @@
   font-size: 24px;
 }
 
+#welcomeSection ul {
+  display: flex;
+}
+
+#welcomeSection li {
+  box-sizing: initial;
+  width: 228px;
+  height: 228px;
+  padding: 0 15px;
+}
+
+#welcomeSection li a {
+  transition: all .2s ease;
+  box-sizing: initial;
+  display: block;
+  width: 208px;
+  height: 208px;
+  border: 10px solid white;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, .3);
+}
+
+#welcomeSection li:nth-child(odd) a {
+  -webkit-transform: rotate(-5deg);
+}
+
+#welcomeSection li:nth-child(even) a {
+  -webkit-transform: rotate(5deg);
+}
+
+#welcomeSection li a h2 {
+  margin-top: 318px;
+  font-size: 30px;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#welcomeSection li a:hover {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+  margin: -46px 0 0 -46px;
+  border-width: 14px 14px 66px;
+  box-shadow: 0px 6px 28px 0px rgba(0, 0, 0, .3);
+  -webkit-transform: rotate(0);
+}
+
+#welcomeSection li a:hover h2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+#food    { background-image: url(../images/home-01-food.jpg);    }
+#legs    { background-image: url(../images/home-02-legs.jpg);    }
+#cats    { background-image: url(../images/home-03-cats.jpg);    }
+#selfies { background-image: url(../images/home-04-selfies.jpg); }
+
 /* More Section */
 
 #moreSection .flex header h2 {
@@ -42,4 +100,20 @@
 
 #moreSection .flex footer a:hover {
   text-decoration: underline;
+}
+
+#moreSection input {
+  transition: all .2s ease;
+  padding: 12px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border: 5px solid black;
+  opacity: .6;
+}
+
+#moreSection input:focus {
+  opacity: 1;
 }
